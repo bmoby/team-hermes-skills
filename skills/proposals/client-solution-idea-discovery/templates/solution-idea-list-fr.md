@@ -1,6 +1,6 @@
 # DÉCOUVERTE D’IDÉES DE SOLUTIONS
 
-## 1. Rappel court du profil client
+## 1. Rappel court du profil client, du contexte marché et des idées métier
 - 
 
 ## 2. Idées côté web

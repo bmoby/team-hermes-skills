@@ -11,11 +11,19 @@ metadata:
 
 # Client Solution Idea Discovery
 
-Use this skill after the client profile has already been created and validated by an intake/profile skill.
+Use this skill after:
+- the client profile has already been created and validated
+- a sector/market summary has been produced
+- a business idea list has been produced
 
 ## Goal
 
-Take a validated client profile and generate a broad set of possible solution ideas that may later feed:
+Take:
+- a validated client profile
+- a useful sector/market summary
+- a business idea list
+
+and generate a broad set of possible **technical** solution ideas that may later feed:
 - a proposal
 - a roadmap
 - a feature selection phase
@@ -23,19 +31,16 @@ Take a validated client profile and generate a broad set of possible solution id
 
 This skill is intentionally exploratory.
 Its job is **not** to filter hard, rank precisely, or decide the final scope.
-Its job is to surface as many useful, plausible, or interesting ideas as possible.
+Its job is to surface as many useful, plausible, or interesting technical directions as possible in response to the business ideas already identified.
 
 ## Input
 
-The expected input is a **validated client profile** or equivalent structured context containing at least:
-- business activity
-- target customer
-- current operations
-- pain points
-- expected improvement area
-- relevant constraints
+The expected input is:
+- a **validated client profile**
+- a **sector/market summary**
+- a **business idea list**
 
-If the client profile is too weak, incomplete, or unvalidated, the agent should say so and recommend using the intake/profile skill first.
+If one of these inputs is too weak, incomplete, or missing, the agent should say so and recommend completing the previous step first.
 
 ## Core principle
 
@@ -48,13 +53,11 @@ The objective is broad exploration with lightweight wording.
 
 ## Mandatory workflow
 
-### Step 1 — Re-read the client profile
-Before idea generation, restate the client context in a compact way:
-- business type
-- target audience
-- current workflow
-- important constraints
-- what the client appears to want
+### Step 1 — Re-read the upstream artifacts
+Before idea generation, restate in a compact way:
+- the client profile
+- the useful sector/market context
+- the main business ideas already identified
 
 ### Step 2 — Explore several idea angles in parallel
 This skill should explore ideas through several analysis angles.
@@ -170,8 +173,8 @@ The orchestrator should therefore treat each angle as a separate module with low
 
 Use this structure.
 
-### 1. Rappel court du profil client
-Short synthesis of the input profile.
+### 1. Rappel court du profil client, du contexte marché et des idées métier
+Short synthesis of the upstream inputs.
 
 ### 2. Idées côté web
 Bullet list.
