@@ -11,6 +11,11 @@ No canonical skills yet.
 - `client-sector-market-research` — Research the client’s sector and market context, then produce a short, useful synthesis for later discovery work.
 - `client-business-idea-discovery` — Generate broad business ideas from a validated client profile plus a sector/market summary, before moving to technical solutions.
 - `client-solution-idea-discovery` — Explore technical solution ideas from a validated client profile, a sector/market summary, and a business idea list across web, bots, AI agents, notifications, and AI image/video angles.
+- `client-scenario-story-mapping` — Generate actor profiles, situations, and many end-to-end stories from the upstream discovery artifacts, then group them by experience logic.
+- `client-scenario-analyst-actors` — Generate likely external and internal actor profiles for scenario mapping.
+- `client-scenario-analyst-situations` — Generate likely situations, behaviors, edge cases, and difficult cases for scenario mapping.
+- `client-scenario-analyst-client-stories` — Write client-facing end-to-end stories using the discovered features and upstream context.
+- `client-scenario-analyst-ops-stories` — Write internal and operational stories using the discovered features and upstream context.
 - `client-idea-analyst-web` — Explore website and web experience ideas from a validated client profile.
 - `client-idea-analyst-bots` — Explore chat bot ideas such as Telegram, WhatsApp, or similar business bots from a validated client profile.
 - `client-idea-analyst-ai-agents` — Explore AI agent use cases and assistant ideas from a validated client profile.
