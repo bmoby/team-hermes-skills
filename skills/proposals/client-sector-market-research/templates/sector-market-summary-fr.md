@@ -15,5 +15,5 @@
 ## 5. Contraintes ou réalités du marché à garder en tête
 - 
 
-## 6. Points utiles pour la suite
+## 6. Éléments de contexte à transmettre
 - 

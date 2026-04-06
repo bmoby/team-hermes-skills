@@ -21,7 +21,8 @@ Take a validated client profile and produce a short, useful, current sector/mark
 - proposal work
 
 This skill is not for writing a full market study.
-It is for producing a practical context document that improves the quality of later reasoning.
+It is for collecting, summarizing, and structuring practical context information that improves the quality of later reasoning.
+It must stay neutral and should not give business advice, solution recommendations, or scope recommendations.
 
 ## Input
 
@@ -69,11 +70,7 @@ Look for useful, current context such as:
 
 ### Step 3 — Extract only useful findings
 Keep only findings that can help later reasoning.
-Good findings are things that may influence:
-- business opportunities
-- customer experience ideas
-- operational improvements
-- possible technical solutions later
+Good findings are things that may influence later analysis, but this skill must not itself recommend what to do next.
 
 ### Step 4 — Separate facts from assumptions
 If something is strongly supported by current sector patterns, say so clearly.
@@ -82,6 +79,7 @@ If something is a reasonable inference rather than a confirmed fact about this e
 ### Step 5 — Produce a reusable synthesis document
 The final output should be concise and reusable by later skills or agents.
 It should work as a clean intermediate artifact.
+It should collect and structure context, not interpret strategy or recommend actions.
 
 ## Output format
 
@@ -102,8 +100,8 @@ Bullet list.
 ### 5. Contraintes ou réalités du marché à garder en tête
 Bullet list.
 
-### 6. Points utiles pour la suite
-Short list of what later skills should keep in mind.
+### 6. Éléments de contexte à transmettre
+Short list of structured context elements that may be reused later, without advice or recommendations.
 
 ## Writing rules
 
@@ -113,6 +111,8 @@ Short list of what later skills should keep in mind.
 - Do not produce a full competitor report unless explicitly asked.
 - Do not jump into detailed solution design yet.
 - Keep the document reusable as input for the next step.
+- Do not give advice, arbitrage, or recommendations at this stage.
+- Avoid formulations such as "il faut", "on devrait", "le vrai levier", or "commencer par".
 
 ## Pitfalls to avoid
 
@@ -121,6 +121,7 @@ Short list of what later skills should keep in mind.
 - drifting into proposal writing too early
 - confusing sector patterns with confirmed client facts
 - producing a summary too vague to help the next step
+- slipping into business advice or solution guidance
 
 ## Deliverable options
 
