@@ -40,6 +40,7 @@ Typical actors may include:
 - Work from the upstream artifacts.
 - Keep profiles short but concrete.
 - Include realistic variety.
+- Include enough profiles to support a large scenario run, not just a handful.
 - Do not write full stories here.
 
 ## Output format

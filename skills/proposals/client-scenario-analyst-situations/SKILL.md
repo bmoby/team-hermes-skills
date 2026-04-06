@@ -40,6 +40,7 @@ Typical situations may include:
 - Work from the upstream artifacts.
 - Keep situations short but concrete.
 - Include realistic variety.
+- Include enough situations to support a large scenario run, not just a short list.
 - Do not write full stories here.
 
 ## Output format

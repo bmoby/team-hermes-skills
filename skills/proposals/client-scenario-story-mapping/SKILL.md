@@ -29,6 +29,8 @@ Transform the discovered features and business ideas into a large, structured sc
 
 This skill is intentionally expansive.
 It should generate many stories, not just a neat short summary.
+This run is expected to be heavy and token-intensive if needed.
+The target is completeness and rigor, not brevity.
 
 ## Core principle
 
@@ -37,6 +39,13 @@ Use fresh-context subagents or equivalent separate passes with clearly separated
 
 This skill should be orchestrated as a multi-agent workflow whenever possible.
 A single-agent fallback is acceptable, but the preferred mode is role-based decomposition.
+
+Every story must try to resolve each problem or transition using an option already present in the discovered feature list.
+If a required option is missing, that missing option must be written explicitly under that story.
+
+The final consolidation must also count:
+- which existing options/features were used across the stories
+- which missing options were requested most often
 
 ## Preferred role split
 
@@ -108,6 +117,7 @@ Restate briefly:
 Generate a broad actor list.
 Include both external and internal actors.
 Include normal and difficult profiles.
+The actor catalog should be large enough to create meaningful variation, not just 3 or 4 generic profiles.
 
 ### Step 3 — Build the situation catalog
 Generate a broad situation list.
@@ -118,11 +128,22 @@ Include:
 - dishonest behavior if relevant
 - stress / urgency situations
 - operational failures if relevant
+The situation catalog should be large enough to support many different stories, not just a few bullet points.
 
-### Step 4 — Write end-to-end stories
+### Step 4 — Write end-to-end stories exhaustively
 Using the actors, situations, and discovered features, write many stories.
 Stories should show how pieces fit together.
-They may be short or medium length, but must be concrete.
+They should be detailed enough to describe:
+- who is involved
+- what happens first
+- what happens next
+- what problem appears
+- how the current option list responds
+- what is still missing if the option list is insufficient
+- how the story ends
+
+Each story must be more than a one-line bullet.
+Each role-specific story writer should create multiple stories per important actor/profile, including both normal and difficult cases.
 
 ### Step 5 — Group stories by user-experience logic
 Group the stories around coherent experience blocks such as:
@@ -136,15 +157,18 @@ Group the stories around coherent experience blocks such as:
 - retention
 - internal handling
 
-### Step 6 — Surface missing or weak areas
+### Step 6 — Surface missing or weak areas and count usage
 At the end, identify:
 - repeated missing capabilities
 - friction points appearing across many stories
 - features that seem disconnected
 - features that seem rarely useful
+- which existing features/options were used often
+- which existing features/options were barely used
+- which missing options were requested repeatedly across stories
 
 This is not a final prioritization step.
-It is only a structural observation step.
+It is only a structural observation step backed by story coverage.
 
 ## Output format
 
@@ -161,14 +185,32 @@ Bullet list.
 
 ### 4. Histoires et scénarios côté client
 Large grouped list.
+Each story should include:
+- profil concerné
+- situation
+- déroulé
+- options/fonctionnalités utilisées
+- options manquantes
 
 ### 5. Histoires et scénarios côté interne / opérations
 Large grouped list.
+Each story should include:
+- profil concerné
+- situation
+- déroulé
+- options/fonctionnalités utilisées
+- options manquantes
 
 ### 6. Regroupements par logique d’expérience
 Grouped blocks showing which stories/features naturally belong together.
 
-### 7. Zones faibles, manques ou options peu utilisées
+### 7. Comptage d’usage des options existantes
+Count which existing options/features were used across the stories.
+
+### 8. Options manquantes récurrentes
+Count which missing options were requested most often.
+
+### 9. Zones faibles, manques ou options peu utilisées
 Structured observations only.
 
 ## Writing rules
@@ -176,9 +218,11 @@ Structured observations only.
 - Write in French if the user speaks French.
 - Be concrete.
 - Prefer realistic stories over abstract theory.
-- Use the discovered features as material, not as a checklist to force everywhere.
+- Use the discovered features as material, but actually reference them in the stories when they are used.
+- If a story needs an option that is missing, write that missing option explicitly.
 - Include both normal and difficult cases.
 - Allow long output if needed.
+- This is a one-time deep run per client, so prefer completeness over brevity.
 - Do not jump into technical architecture or prioritization yet.
 
 ## Pitfalls to avoid
