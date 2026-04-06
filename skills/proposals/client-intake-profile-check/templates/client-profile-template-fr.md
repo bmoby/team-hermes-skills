@@ -69,5 +69,12 @@
 - **Statut :** READY / READY WITH ASSUMPTIONS / BLOCKED
 - **Raison :**
 
+## Questions minimales à poser au client
+- 
+
 ## Prochaine action recommandée
 - 
+
+## Décision humaine attendue
+- **Option A — Continuer maintenant**
+- **Option B — Poser d’abord les questions au client**

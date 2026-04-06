@@ -51,6 +51,11 @@ The deliverable must always contain:
   - **READY**
   - **READY WITH ASSUMPTIONS**
   - **BLOCKED**
+- a recommended next action
+- if information is missing: a **minimal question set** to ask the client
+- a clear note that the **human decides** whether to:
+  - continue immediately
+  - ask the missing questions first
 
 ## Universal mandatory information
 
@@ -210,9 +215,24 @@ Return exactly one verdict:
 - READY WITH ASSUMPTIONS
 - BLOCKED
 
-### Step 6 — If blocked, ask only for the minimum missing information
+### Step 6 — Generate the minimum question set when information is missing
+If any important information is missing, the skill must generate a short, targeted list of questions.
 Do not ask a giant questionnaire.
-Ask only the smallest set of missing information needed to unblock the next phase.
+Ask only the smallest set of missing information needed to unblock the next phase or improve reliability.
+
+The question set must:
+- be prioritized
+- focus first on blocking information
+- be grouped in a way that a human can easily copy/send to the client
+- avoid asking for information already known
+
+### Step 7 — Leave the final decision to the human
+The skill must not decide alone whether to continue immediately or to pause for clarification.
+It must instead provide a recommendation.
+
+The final output should make clear that the human can choose between:
+- **continue now** using the current information
+- **ask the client the missing questions first**
 
 ## Output format
 
@@ -239,12 +259,25 @@ One of:
 - READY WITH ASSUMPTIONS
 - BLOCKED
 
-### 6. Prochaine action recommandée
+### 6. Questions minimales à poser au client
+Include this section whenever anything important is missing.
+The questions must be:
+- short
+- specific
+- directly usable by the human
+- limited to what is necessary
+
+### 7. Prochaine action recommandée
 Examples:
 - lancer la recherche
 - lancer une réflexion V1
 - demander 4 informations bloquantes
 - passer à la préparation de proposition
+
+### 8. Décision humaine attendue
+Always end with the explicit decision point:
+- **Option A — Continuer maintenant**
+- **Option B — Poser d’abord les questions au client**
 
 ## Writing rules
 
