@@ -6,4 +6,4 @@ No canonical skills yet.
 
 ## Proposals under review
 
-No proposals yet.
+- `commercial-proposal-from-brief` — Build a structured commercial proposal from a raw brief, with lean scope framing, clear business narrative, and a reusable French proposal template.
